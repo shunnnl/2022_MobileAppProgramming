@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translation Activity"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TranslateActivity"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="354dp"
+            android:layout_height="658dp"
+            android:layout_marginLeft="25dp"
+            app:srcCompat="@drawable/background"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="37dp"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            android:ems="15"
+            android:hint="Input"
+            android:textColorHint="@color/black"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="99dp"
+            android:layout_below="@+id/editText"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/editText"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="96dp"
+            android:ems="15"
+            android:text="result"
+            android:textColor="@color/black"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:id="@+id/translation"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultView"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Translation"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/MyBlue"
+        android:columnCount="5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/MyBlue">
+
+        <ImageButton
+            android:id="@+id/translationBtn"
+            android:layout_width="78dp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/translation">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/subwayBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/subway">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/mapBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/map">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/recommendationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommendation"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/stampBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="centerInside"
+            android:src="@drawable/stamp"></ImageButton>
+    </GridLayout>
+
+
+</LinearLayout>

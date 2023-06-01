@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/BLUE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="                  MAP"
+        app:titleTextColor="@color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="650sp"
+        tools:context=".StampActivity1">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="354dp"
+            android:layout_height="658dp"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/background"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="346dp"
+            android:layout_height="205dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/stamp6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="90dp"
+            android:text="Name : Gwangjang Market"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/ll"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="315dp"
+            android:layout_height="210dp"
+            android:layout_below="@id/imageView5"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/six"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:scrollbars="vertical"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/ll"/>
+
+        <Button
+            android:id="@+id/Site_button1"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Site Link!"
+            android:layout_marginLeft="130dp"/>
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/MyBlue"
+        android:columnCount="6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/MyBlue">
+
+        <ImageButton
+            android:id="@+id/translationBtn"
+            android:layout_width="78dp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/translation">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/subwayBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/subway">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/mapBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/map">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/recommendationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommendation">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/stampBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="centerInside"
+            android:src="@drawable/stamp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/reservationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/reservation">
+        </ImageButton>
+    </GridLayout>
+
+
+</LinearLayout>

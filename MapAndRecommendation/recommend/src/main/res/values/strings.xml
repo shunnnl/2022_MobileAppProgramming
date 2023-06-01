@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">recommend</string>
+    <string name="famous_restaurants">Famous Restaurants</string>
+    <string name="tourist_attractions">Tourist Attractions</string>
+    <string name="recommendations">\t\t\t\t\t\t\t\t\t\t\t\t\t\tRecommendations</string>
+    <string name="empty">"    "</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/back_blue"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select Line"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/Button1"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:text="Line 1"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button2"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 2"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button3"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 3"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button4"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 4"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button5"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 5"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button6"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 6"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button7"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 7"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button8"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 8"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button9"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:text="Line 9"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

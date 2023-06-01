@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/BLUE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="                         Reservation"
+        app:titleTextColor="@color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="650sp"
+        android:background="@color/back_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DATE"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/datebutton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="Select Date"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:onClick="OnClickHandler"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TIME"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/timebutton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="Select Time"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:onClick="OnClickHandler2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PEOPLE"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="355dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                />
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/completeButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="Reservation Complete"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/MyBlue"
+        android:columnCount="6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/MyBlue">
+
+        <ImageButton
+            android:id="@+id/translationBtn"
+            android:layout_width="78dp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/translation">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/subwayBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/subway">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/mapBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/map">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/recommendationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommendation">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/stampBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="centerInside"
+            android:src="@drawable/stamp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/reservationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/reservation">
+        </ImageButton>
+    </GridLayout>
+
+
+</LinearLayout>

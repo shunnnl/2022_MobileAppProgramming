@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/BLUE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/recommendations"
+        app:titleTextColor="@color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:text="  "
+        android:background="@color/SKY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/SKY">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300sp"
+            android:layout_height="280sp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/SKYBLUE"
+            app:cardCornerRadius="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230sp"
+                    android:layout_height="230sp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20sp">
+
+                    <ImageButton
+                        android:id="@+id/imgBtnTouristAttractions"
+                        android:layout_width="250sp"
+                        android:layout_height="250sp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tourist_attractions">
+                    </ImageButton>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:gravity="center"
+                    android:text="@string/tourist_attractions"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tourist Attractions Image Button -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:text="  " />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300sp"
+            android:layout_height="280sp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/SKYBLUE"
+            app:cardCornerRadius="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230sp"
+                    android:layout_height="230sp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20sp">
+
+                    <ImageButton
+                        android:id="@+id/imgBtnFamousRestaurants"
+                        android:layout_width="250sp"
+                        android:layout_height="250sp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/famous_restaurants">
+                    </ImageButton>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:gravity="center"
+                    android:text="@string/famous_restaurants"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Famous Attractions Image Button -->
+
+    </LinearLayout>
+
+
+</LinearLayout>

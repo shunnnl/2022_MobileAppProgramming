@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/BLUE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="                      SUBWAY"
+        app:titleTextColor="@color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="650sp"
+        tools:context=".ApplicationActivity">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="354dp"
+            android:layout_height="640dp"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/background"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="190dp"
+            android:layout_height="37dp"
+            app:srcCompat="@drawable/basic_tle"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="74dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Input Name"
+            android:inputType="textPersonName"
+            android:textSize="16dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="190dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/edit_id"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="48dp"
+            app:srcCompat="@drawable/basic_tle" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_id"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="53dp"
+            android:text="Mail Address"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edit_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:ems="15"
+            android:hint="Input Mail Address"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="190dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/edit_id1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="48dp"
+            app:srcCompat="@drawable/basic_tle" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_id1"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="53dp"
+            android:text="Address"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edit_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView4"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:ems="15"
+            android:hint="Input Postal Address"
+            android:inputType="textPostalAddress"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_id2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/notice"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/completion"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="74dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Completion" />
+
+
+    </RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/MyBlue"
+        android:columnCount="6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/MyBlue">
+
+        <ImageButton
+            android:id="@+id/translationBtn"
+            android:layout_width="78dp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/translation">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/subwayBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/subway">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/mapBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/map">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/recommendationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommendation">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/stampBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="centerInside"
+            android:src="@drawable/stamp">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/reservationBtn"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/MyBlue"
+            android:scaleType="fitXY"
+            android:src="@drawable/reservation">
+        </ImageButton>
+    </GridLayout>
+
+
+</LinearLayout>
